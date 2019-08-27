@@ -1,0 +1,21 @@
+load("//Config:buck_rule_macros.bzl", "apple_third_party_lib", "apple_cxx_third_party_library")
+
+apple_cxx_third_party_library(
+    name = "IGListKit",
+    visibility = ["PUBLIC"],
+    exported_headers = glob([
+        "IGListKit/Source/**/*.h",
+    # We are excluding this header because a) it is not public and b) `PromiseKit` does not
+    # consider it to be a source in its `podspec`: https://github.com/mxcl/PromiseKit/blob/a20df65b74b3eec290e524abb9839412542328b6/PromiseKit.podspec#L114
+    ], exclude = [
+        "IGListKit/Source/Internal/*.h", 
+        "IGListKit/Source/Common/Internal/*.h"
+    ]),
+    headers = glob([
+        "IGListKit/Source/**/*.h"
+    ]),
+    srcs = glob([
+        "IGListKit/Source/**/*.m",
+        "IGListKit/Source/**/*.mm",
+    ]),
+)
