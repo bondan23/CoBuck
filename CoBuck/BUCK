@@ -33,7 +33,8 @@ apple_library(
 
         # Resources
         ":StoryboardResources",
-        "//DepsObjC:DepsObjC"
+        "//DepsObjC:DepsObjC",
+        "//DepsMix:DepsMix",
     ]
 )
 
