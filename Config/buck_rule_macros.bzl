@@ -109,7 +109,7 @@ def apple_lib(
         **kwargs):
     compiler_flags = compiler_flags or []
     swift_compiler_flags = swift_compiler_flags or []
-
+    
     # Don't treat warnings as errors for Beta Xcode versions
     if native.read_config("xcode", "beta") == "True":
         warning_as_error = False

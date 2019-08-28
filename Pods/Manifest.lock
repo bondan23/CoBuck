@@ -1,20 +1,61 @@
 PODS:
+  - FLAnimatedImage (1.0.12)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1.2)
+  - PINRemoteImage (3.0.0-beta.13):
+    - PINRemoteImage/FLAnimatedImage (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache (= 3.0.0-beta.13)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/FLAnimatedImage (3.0.0-beta.13):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
+  - PINRemoteImage/iOS (3.0.0-beta.13):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - Texture (2.7):
+    - Texture/PINRemoteImage (= 2.7)
+  - Texture/Core (2.7)
+  - Texture/PINRemoteImage (2.7):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache
+    - Texture/Core
 
 DEPENDENCIES:
   - IGListKit (= 3.4.0)
+  - PINRemoteImage (= 3.0.0-beta.13)
+  - Texture (= 2.7)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FLAnimatedImage
     - IGListKit
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - Texture
 
 SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
 
-PODFILE CHECKSUM: 1a80be097773a5e0d2c710934855bc895c1da71f
+PODFILE CHECKSUM: acf5971c830e7380a357eff00f37fb25346b5ed0
 
 COCOAPODS: 1.5.3

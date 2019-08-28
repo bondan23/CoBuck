@@ -35,7 +35,9 @@ apple_library(
         ":StoryboardResources",
         "//DepsObjC:DepsObjC",
         "//DepsMix:DepsMix",
-        "//Pods:IGListKit",
+        # "//Pods:IGListKit",
+        "//Pods/PINRemoteImage:PINRemoteImage",
+        "//Pods/Texture:Core",
     ]
 )
 
